@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "RobotoBold";
+  src: url(./assets/fonts/Roboto-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(./assets/fonts/Roboto-Regular.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  background-color: hsl(235, 18%, 26%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-color: white;
+  padding: 50px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  font-family: "Roboto";
+  font-size: 15px;
+}
+.container h1 {
+  font-family: "RotoboBold";
+  font-size: 2.5rem;
+  margin: 15px 0;
+}
+.container p {
+  color: hsl(0, 1%, 27%);
+}
+.container p span {
+  color: black;
+  font-family: "RobotoBold";
+}
+.container a {
+  width: 100%;
+}
+.container .dismiss-btn {
+  margin-top: 30px;
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  cursor: pointer;
+}
+
+.container .dismiss-btn:hover {
+  background: linear-gradient(to right, #d38312 0%, #a83279 51%, #d38312 100%);
+  box-shadow: 0 4px 15px rgba(211, 131, 18, 0.5),
+    0 4px 15px rgba(168, 50, 121, 0.5);
+}
+/* mobile */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content {
+    margin-top: 100px;
+  }
+  .container h1 {
+    width: 50%;
+  }
+  .container p {
+    font-size: 18px;
+  }
+}
